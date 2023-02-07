@@ -1,0 +1,31 @@
+body {
+    padding: 100px 30px;
+}
+.links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.links li {}
+.links li + li {
+    margin-top: 1rem;
+}
+.links li a {
+    margin: 0 auto;
+    display: flex;
+}
+.links li .icon {
+    margin: 0 14px;
+    padding: 0;
+    align-self: center;
+}
+.links li .label {
+    flex: 1;
+    /* left */
+    text-align: left;
+    /* centered */
+    /*text-align: center;*/
+    /* true centered */
+    /*text-align: center;*/
+    /*padding-right: calc( 20px + 14px + 14px );*/
+}
