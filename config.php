@@ -200,7 +200,7 @@ $links = [
         'icon_file'    => 'email_alt.svg',
     ],
     [
-        'service_name' => 'Blog Icon">Blog',
+        'service_name' => 'Blog',
         'link_label'   => 'Blog',
         'link_url'     => '#',
         'button_class' => 'button-default',
