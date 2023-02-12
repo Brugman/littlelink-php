@@ -3,6 +3,7 @@
 define( 'LL', true );
 
 include 'config.php';
+include 'functions.php';
 
 ?>
 <!DOCTYPE html>
@@ -33,23 +34,8 @@ include 'config.php';
 
             <p>LittleLink is an open source DIY alternative to services like <a href="https://linktr.ee" target="_blank" rel="noopener">Linktree</a> and <a href="https://many.link" target="_blank" rel="noopener">many.link</a>. LittleLink was built using <a href="http://www.getskeleton.com" target="_blank" rel="noopener">Skeleton</a>, a dead simple, responsive boilerplate—we've just created some branded buttons and stripped out the things you won't need. 😊</p>
 
-            <ul class="links">
-<?php
+<?php display_links( $links ); ?>
 
-foreach ( $links as $link )
-{
-?>
-                <li>
-                    <a class="button <?=$link['button_class'];?>" href="<?=$link['link_url'];?>" target="_blank" rel="noopener">
-                        <img class="icon" src="images/icons/<?=$link['icon_file'];?>" alt="<?=$link['service_name'];?> Logo">
-                        <span class="label"><?=$link['link_label'];?></span>
-                    </a>
-                </li>
-<?php
-}
-
-?>
-            </ul>
         </div>
     </div>
 </div>
